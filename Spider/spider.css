@@ -68,7 +68,7 @@ html {
   display: block;
   margin: 55%;
   border-radius: 50%;
-  animation: look 8 s infinite;
+  animation: look 8s infinite;
 }
 
 .spider .leg {
