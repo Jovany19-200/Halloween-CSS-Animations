@@ -61,7 +61,7 @@ html {
 }
 
 .spider .eye::after{
-  background: #faf4f4;
+  background: #000;
   width: 7px;
   height: 7px;
   content: '';
@@ -71,13 +71,13 @@ html {
   animation: look 8s infinite;
 }
 
-.spider .leg {
+.spider .legs {
   position: absolute;
   bottom: -10%;
   z-index: -1;
 }
 
-.spider .leg .leg {
+.spider .legs .leg {
   width: 80px;
   height: 40px;
   margin-top: -20px;
@@ -93,7 +93,7 @@ html {
 .spider .legs.right{
   left: -60%;
 }
-
+<!--top left
 .legs.left .leg:nth-child(1){
   transform: rotate(10deg);
   margin-left: 10px;
@@ -101,17 +101,17 @@ html {
 
 .legs.right .leg:nth-child(1){
   transform: rotate(-10deg);
-  margin-left: -10px;
+  margin-left: 140px;
 }
 
 .legs.left .leg:nth-child(2){
   transform: rotate(-20deg);
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
-.legs.left .leg:nth-child(2){
+.legs.right .leg:nth-child(2){
   transform: rotate(20deg); 
-  margin-left: -20px;
+  margin-left: 130px;
 }
 
 .legs.left .leg:nth-child(3){
@@ -119,9 +119,9 @@ html {
   margin-left: 30px;
 }
 
-.legs.left .leg:nth-child(3){
+.legs.right .leg:nth-child(3) {
   transform: rotate(50deg);
-  margin-left: -30px;
+  margin-left: 120px;
 }
 
 @keyframes look {
@@ -138,7 +138,7 @@ html {
     transform: translateY(0);
   }
   50% {
-    transform: translateX(-20px);
+    transform: translateY(-20px);
   }
 }
 
